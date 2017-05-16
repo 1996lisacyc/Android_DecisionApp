@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Step 2 外在支持 - 重要他人"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:text="是否有誰的意見對您作決定有影響力？若沒有請跳到第4題"
+        android:layout_width="match_parent"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60px" />
+
+    <TextView
+        android:text="1.您認為他/她比較喜歡哪樣的重建方式？"
+        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:id="@+id/radioGroup1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:text="植入體"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "rbclick"
+            android:id="@+id/radio1" />
+
+        <RadioButton
+            android:text="自體移植"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "rbclick"
+            android:id="@+id/radio2" />
+
+        <RadioButton
+            android:text="不希望重建"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "rbclick"
+            android:id="@+id/radio3" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60px" />
+
+    <TextView
+        android:text="2.他/她的意見對您最後決定的影響程度(1-10)："
+        android:layout_width="match_parent"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:autoText="false"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_width="200px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="NEXT STEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Step 2 外在支持 - 重要他人"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/textView2" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60px" />
+
+    <TextView
+        android:text="3.他/她對您的決定會給予多少支持(1-10)？"
+        android:layout_width="match_parent"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Spinner
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60px" />
+
+    <TextView
+        android:text="4.您希望做決定的時候可以…"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+        android:text="在聽完建議之後自己做決定"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio1"
+            android:onClick = "rbclick"
+            android:checked="false"
+            android:duplicateParentState="false" />
+
+        <RadioButton
+        android:text="和他/她一起做決定"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:onClick = "rbclick"
+        android:id="@+id/radio2" />
+
+        <RadioButton
+        android:text="由他/她幫我做決定"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:onClick = "rbclick"
+        android:id="@+id/radio3" />
+
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120px" />
+
+    <Button
+        android:text="NEXT STEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next" />
+</LinearLayout>
